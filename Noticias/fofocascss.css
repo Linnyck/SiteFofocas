@@ -1,0 +1,220 @@
+/* Estilo geral */
+* {
+    margin: 0; /*define que não deve haver margem ao redor do elemento.*/
+    padding: 0;/*define que não deve haver preenchimento dentro do elemento.*/
+    box-sizing: border-box; /* define que o tamanho total do elemento deve 
+    incluir o preenchimento e a borda, em vez de ser adicionado a partir do tamanho inicial.*/
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* Define a fonte a ser usada */
+    background: #fccde4; /* Define a cor de fundo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);/*Define a sombra da caixa do elemento*/
+    color: var(--cor-primaria); /* Define a cor do texto */
+    line-height: 1.5;/*/ Define a altura da linha */
+  }
+  
+  a {
+    text-decoration: none; /* Remove a decoração de link */
+    color: #f3eaea; /* Define a cor do texto dos links */
+  }
+  
+  /* Estilo do header */
+  header {
+    background: linear-gradient(100deg, #8b0247, #16074b); /*Define um fundo gradiente de cor em degradê*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*Define uma sombra para o cabeçalho*/
+    padding: 1rem; /*Define um preenchimento interno para o cabeçalho*/
+    display: flex; /*Define o display para flex*/
+    justify-content: space-between; /*Define o alinhamento horizontal do conteúdo para ser entre eles, preenche uniforme o espaco*/
+    align-items: center; /*Define o alinhamento vertical do conteúdo para ser centralizado*/
+  }
+  
+/* Define o estilo para os links dentro da barra de navegação */
+nav a {
+  margin-left: 1rem; /* Define uma margem à esquerda */
+  background: linear-gradient(45deg,#073e63, #e01b7e); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Define uma sombra */
+  padding: 1rem; /* Define um preenchimento interno */
+  border: 2px solid #010e01; /* Define uma borda */
+  border-radius: 10px; /* Define um raio de borda arredondado */
+  color: white; /* Define a cor do texto */
+  padding: 10px 20px; /* Define um preenchimento interno com tamanhos diferentes para o topo / base e esquerda / direita */
+  text-align: center; /* Define o alinhamento do texto para ser centralizado */
+  text-decoration: none; /* Remove a decoração de sublinhado do link */
+  display: inline-block; /* Define o elemento como bloco dentro de uma linha */
+  font-size: 16px; /* Define o tamanho da fonte */
+  cursor: pointer; /* Define o ponteiro do mouse para ser uma mão clicável */
+  transition: all 0.3s ease; /* Define uma transição para animar as mudanças de estilo */
+  opacity: 0.8; /* Define a opacidade do elemento */
+}
+
+  /* Define o estilo dos links na barra de navegação ao passar o mouse por cima */
+nav a:hover {
+  background-color: #073e63; /* Define a cor de fundo quando o cursor passa sobre o elemento */
+  border-color: #111311; /* Define a cor da borda quando o cursor passa sobre o elemento */
+  transition: all 0.3s ease; /* Adiciona uma transição suave para as mudanças de estilo */
+  opacity: 2; /* Define a opacidade do elemento quando o cursor passa sobre ele */
+}
+
+  
+ /* Define o estilo para o título h1 */
+h1 {
+  background: linear-gradient(45deg, #f0f1f5, #e01b7e); /* Define um fundo gradiente em degradê para o texto */
+  background-clip: text;/* Define o recorte do gradiente para o texto */
+  -webkit-background-clip: text;/* Define o recorte do gradiente para o texto em navegadores da webkit */
+  -webkit-text-fill-color: transparent; /* Define a cor de preenchimento para o texto em navegadores da webkit */
+  /* Define a cor do texto como transparente */
+  color: transparent;/* Define a cor do texto como transparente */
+}
+
+  
+  /* Estilo do main */
+  main {
+    display: flex; /*define o elemento como um container flexível*/
+    justify-content: space-between; /*alinhamento horizontal dos elementos*/
+    padding: 2rem; /*espaçamento interno do elemento*/
+}
+
+  
+article {
+  background: linear-gradient(45deg, #f5f0f0, #e01b7e); /* Define um fundo gradiente de cor em degradê*/
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Define uma sombra para o artigo*/
+  padding: 1rem; /* Define um espaçamento interno para o artigo*/
+  margin-right: 1rem; /* Define uma margem à direita para o artigo*/
+  width: 48%; /* Define a largura do artigo*/
+  transition: all 0.3s ease; /* Adiciona uma transição suave para mudanças de propriedades*/
+  border-radius: 10px; /* Define um raio de borda para o artigo*/
+}
+article:hover { /*Essa linha adiciona um estilo visual quando o mouse está passando por cima do elemento "article".*/
+  background: linear-gradient(100deg, #8b0247, #16074b); /* Define um fundo gradiente de cor em degradê */
+  transform: translateY(-5px); /* Aplica uma translação no eixo Y de -5px, movendo o elemento para cima */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Define uma sombra para o elemento */
+  opacity: 0.9; /* Define a opacidade do elemento */
+}
+  article a { /*seleciona todos os links dentro do elemento article.*/
+    color: black;/*define a cor do texto desses links como preto.*/
+  }
+  
+  img {
+    display: block; /*define a imagem como um elemento de bloco;*/
+    max-width: 100%; /*define a largura máxima da imagem como 100% do seu contêiner;*/
+    height: auto; /*define a altura da imagem como automática para manter a proporção original;*/
+    margin-bottom: 1rem; /*define uma margem inferior de 1rem para a imagem.*/
+  }
+  
+  h2 {
+    font-size: 1.5rem; /*Define o tamanho da fonte do texto dentro dos elementos h2*/
+    margin-bottom: 0.5rem;/*Define uma margem inferior de 0.5 vezes o tamanho da unidade 
+    de medida rem (relativa ao tamanho da fonte) para os elementos h2*/
+  }
+  
+  p { /*Estilizando todos os parágrafos do HTML.*/
+    font-size: 1rem;/*Define o tamanho da fonte como 1rem.*/
+    line-height: 1.5;/* Define a altura da linha para 1,5 vezes o tamanho da fonte.*/
+    color: #131111;/*Define a cor do texto como um tom escuro de cinza.*/
+  }
+  
+  /* Estilo do aside */
+  aside {
+    background: #ffffff; /* cor de fundo branca */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* sombra com leve transparência */
+    padding: 1rem; /* preenchimento interno de 1rem */
+    width: auto; /* largura automática */
+    border-radius: 10px; /* bordas arredondadas */
+    opacity: 0.8; /* opacidade de 80% */
+
+    display: grid; /* define como grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
+    grid-gap:0px; /* sem espaçamento entre as células */
+    align-items: center; /* alinha verticalmente ao centro */
+}
+aside div {
+  display: flex; /* Define o elemento como flex container */
+  flex-direction: column; /* Alinha os itens verticalmente */
+  align-items: center; /* Centraliza os itens horizontalmente */
+}
+aside p {
+  font-size: 1rem; /* Define o tamanho da fonte */
+  line-height: 1.5; /* Define a altura da linha */
+  color: #777; /* Define a cor do texto */
+  margin-top: 0.5rem; /* Define a margem superior */
+  }
+  input[type="submit"] {
+    background: linear-gradient(100deg, #e02784, #3b209c); /* cor de fundo */
+    color: #fff; /* cor do texto */
+    border: none; /* remover borda */
+    border-radius: 5px; /* arredondar bordas */
+    padding: 10px 20px; /* espaçamento interno */
+    font-size: 16px; /* tamanho da fonte */
+    cursor: pointer; /* alterar o cursor ao passar o mouse */
+}
+
+input[type="submit"]:hover {
+    background-color: #FF69B4; /* cor de fundo ao passar o mouse */
+}
+.Teste{ /*Classe declarada para poder editar o JS das imagens*/
+  width: auto;/* Define a largura automática */
+  padding-right: 10px;/* Define o preenchimento da direita */
+  }
+ /* Define o estilo para a tag 'footer' */
+footer {
+  /* Define um gradiente linear de fundo, com um ângulo de 100 graus e duas cores */
+  background: linear-gradient(100deg, #8b0247, #16074b);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);/* Adiciona uma sombra à caixa do footer */
+  padding: 1rem;/* Define o espaçamento interno do footer */
+  color: #070101;/* Define a cor do texto do footer */
+  display: flex;/* Define a exibição do footer como um container flexível */
+  align-items: center;/* Alinha os elementos do footer verticalmente */
+  border-radius: 10px;/* Define um raio de borda para suavizar as bordas do footer */
+}
+/* Estilo para o elemento "p" dentro do elemento "footer" */
+footer p {
+  margin-right: 1rem; /* Define a margem direita */
+  color: #010e01;/* Define a cor do texto */
+}
+footer a {
+  margin-right: 1rem; /* Define a margem direita */
+  color: #fff; /* Define a cor do texto */
+}
+
+  /* Estilo responsivo */
+  @media screen and (max-width: 768px) { /*define a regra de estilo para dispositivos com largura máxima de 768px.*/
+    main {/*seleciona o elemento main.*/
+      flex-wrap: wrap;/*define o comportamento de quebra de linha para flexbox.*/
+      justify-content: center;/* centraliza os elementos horizontalmente.*/
+    }
+    article { /*Define o estilo para os elementos "article"*/
+        margin-right: 0;/*Remove a margem direita*/
+        margin-bottom: 1rem;/* Adiciona margem inferior de 1rem*/
+        width: 100%; /* Define a largura como 100%*/
+        transition: all 0.3s ease;/* Adiciona uma transição de 0.3s para todas as propriedades.*/
+        }
+        
+        article:hover { /*seleciona o elemento "article" quando o cursor do mouse está sobre ele*/
+        transform: none;/* remove qualquer transformação aplicada no elemento*/
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);/* adiciona uma sombra ao elemento com 4px 
+        de deslocamento horizontal, 8px de deslocamento vertical, 0 de desfoque e transparência de 20%*/
+        }
+        
+        aside {
+        width: 100%;
+        margin-top: 1rem;
+        }
+        
+        header { /*Define o estilo para o elemento "aside".*/
+        flex-direction: column;/*Define a largura do elemento como 100%.*/
+        align-items: center;/*Define a margem superior do elemento como 1 rem.*/
+        }
+        
+        nav a {
+        margin-top: 1rem; /*Define a margem superior de 1rem*/
+        }
+        footer {
+        flex-direction: column; /*define a direção do layout como vertical, empilhando os elementos um em cima do outro.*/
+        text-align: center;/* centraliza o texto dentro do elemento.*/
+        }
+        footer p {
+        margin-bottom: 1rem;/*adiciona uma margem inferior de 1 unidade de medida ao parágrafo.*/
+        }
+        }
+        
